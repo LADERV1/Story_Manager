@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ma.example.library">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Story Manager App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddEditActivity" android:exported="false" />
+        <activity android:name=".AddEditAuthorActivity" android:exported="false" />
+        <activity android:name=".AddEditCategoryActivity" android:exported="false" />
+        <activity android:name=".AddEditCountryActivity" android:exported="false" />
+        <activity android:name=".AddEditStoryActivity" android:exported="false" />
+        <activity android:name=".AuthorListActivity" android:exported="false" />
+        <activity android:name=".BookListActivity" android:exported="false" />
+        <activity android:name=".CategoryListActivity" android:exported="false" />
+        <activity android:name=".CountryListActivity" android:exported="false" />
+        <activity android:name=".EditBookActivity" android:exported="false" />
+        <activity android:name=".StoryViewActivity" android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ma.example.library.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

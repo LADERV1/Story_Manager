@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#5D4EF5</item>
+        <item name="colorPrimaryVariant">#4839E0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#F44336</item>
+        <item name="colorSecondaryVariant">#D32F2F</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Text appearance -->
+        <item name="android:textViewStyle">@style/AppTextViewStyle</item>
+        <item name="materialButtonStyle">@style/AppButtonStyle</item>
+        <item name="textInputStyle">@style/AppTextInputLayoutStyle</item>
+    </style>
+
+    <!-- Text appearance for TextViews -->
+    <style name="AppTextViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="AppButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- TextInputLayout style -->
+    <style name="AppTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#5D4EF5</item>
+        <item name="hintTextColor">#5D4EF5</item>
+    </style>
+    <style name="CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedCadreImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+
+</resources>
